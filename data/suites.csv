@@ -1,0 +1,20 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Test to verify the checkboxes on the page
+
+:param test_setup: setting up the browser and page objects
+:return: None
+","917","test_text_boxes","tests","Fri May 09 18:59:28 GMT 2025","passed","Fri May 09 18:59:29 GMT 2025","TestCheckBoxes","test_check_boxes","",""
+"Test to verify the functionality of the double click button
+
+:param test_setup: setting up the browser and page objects
+:return: None
+","733","test_double_click_button","tests","Fri May 09 18:59:20 GMT 2025","passed","Fri May 09 18:59:21 GMT 2025","TestButtons","test_buttons","",""
+"Test to verify the functionality of the Right Mouse Button click button
+:param test_setup: setting up the browser and page objects
+:return: None
+","332","test_rmb_click_button","tests","Fri May 09 18:59:23 GMT 2025","passed","Fri May 09 18:59:23 GMT 2025","TestButtons","test_buttons","",""
+"Test to verify the functionality of the dynamic button
+
+:param test_setup: setting up the browser and page objects
+:return: None
+","369","test_dynamic_button","tests","Fri May 09 18:59:25 GMT 2025","passed","Fri May 09 18:59:26 GMT 2025","TestButtons","test_buttons","",""
