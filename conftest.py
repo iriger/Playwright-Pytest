@@ -5,11 +5,10 @@ from playwright.sync_api import Playwright
 
 disable_loggers = []
 
-BASE_URL = 'https://demoqa.com'
+BASE_URL = 'https://automationexercise.com/'
 
 @pytest.fixture(scope='session')
 def base_url():
-    """Fixture to provide base URL for tests"""
     return BASE_URL
 
 @pytest.fixture(scope='function')
@@ -22,11 +21,10 @@ def new_page(playwright: Playwright, request):
         browser = playwright.firefox.launch(headless=headless)
     if browser_name == "webkit":
         browser = playwright.webkit.launch(headless=headless)
-    context = browser.new_context(viewport={"width": 1920, "height": 1080})
+    context = browser.new_context(viewport={"width": 1440, "height": 1080})
     page = context.new_page()
 
     page.base_url = base_url
-    # page.goto(f'https://demoqa.com/buttons')
     yield page
     browser.close()
 
@@ -39,7 +37,6 @@ def pytest_runtest_makereport(item, call) -> None:
         if call.excinfo is not None and "new_page" in item.funcargs:
             page = item.funcargs["new_page"]
 
-            # ref: https://stackoverflow.com/q/29929244
             allure.attach(
                 page.screenshot(full_page=True, type='png'),
                 name=f"{item.nodeid}.png",
