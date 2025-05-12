@@ -2,7 +2,7 @@
 
 ## Project Summary
 
-This repository contains an automated testing framework for app **https://automationexercise.com/** using Playwright with Pytest and Page Object Model (POM) design pattern. The project focuses on testing web application functionality including user registration, login, product filtering, search functionality, and other key features.
+This repository contains an automated testing framework for **https://automationexercise.com/** using Playwright with Pytest and Page Object Model (POM) design pattern. The project focuses on testing web application functionality including user registration, login, product filtering, search functionality, and other key features.
 
 ### Key Features:
 - 🎭 **Playwright** 
